@@ -41,7 +41,6 @@ class CORAADataset(Dataset):
 
         return signal
 
-
     def _get_labels(self) -> list:
         def extract_label_from_filename(filename):
             label = re.search(r".+_(.+).wav", filename).group(1)
@@ -54,4 +53,6 @@ class CORAADataset(Dataset):
 if __name__ == "__main__":
     DATA_DIR = "../data/train/"
     dataset = CORAADataset(DATA_DIR, model_sr=16000)
+
+    print(f"There are {len(dataset)} samples!")
 
