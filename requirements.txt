@@ -1,0 +1,8 @@
+HyperPyYAML==1.0.0
+scikit-learn==1.0.2
+speechbrain==0.5.11
+tensorboard==2.7.0
+tensorboard-data-server==0.6.1
+tensorboard-plugin-wit==1.8.0
+torch==1.10.1
+torchaudio==0.10.1
